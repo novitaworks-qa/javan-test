@@ -18,6 +18,7 @@ describe('Check Broken Links', () => {
   })
 })
 
+// Script ini masih belum sempurna, namun tujuannya adalah untuk menampilkan perbandingan: ketika email diisi dengan format yang salah, muncul warning, sementara jika nama diisi dengan format yang salah, tidak ada warning yang muncul
 describe('Form Submission - Error Warning', () => {
   it('show warning after input form with invalid email format', () => {
     cy.visit('https://javan.co.id/contact')
