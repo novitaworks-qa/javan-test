@@ -18,11 +18,13 @@ describe('Check Broken Links', () => {
   })
 })
 
-describe('Form Submission - Error Popup', () => {
-  it('should show error popup after submitting form with invalid email, but not error for number in name', () => {
+describe('Form Submission - Error Warning', () => {
+  it('show warning after input form with invalid email format', () => {
     cy.visit('https://javan.co.id/contact')
     cy.get('input[name="name"]').type('12345') 
-    cy.get('input[name="email"]').first().type('invalid@email') 
+    y.get('input[name="nickname"]').type('aku') 
+    cy.get('input[name="email"]').first().type('invalidemail') 
+    cy.get('input[name="phone"]').type('08574288012345') 
     cy.get('input[name="institution"]').type('jaya abadi')
     cy.get('select[name="subject"]').select('Ads') 
     cy.get('textarea[name="message"]').type('johndooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo')
