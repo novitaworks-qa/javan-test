@@ -18,22 +18,3 @@ describe('Check Broken Links', () => {
   })
 })
 
-// describe('Form Submission - Error Popup', () => {
-//   it('should show error popup after submitting form with invalid data', () => {
-//     cy.visit('https://javan.co.id/contact')
-//     cy.get('input[name="name"]').type('John Doe')
-//     cy.get('input[name="nickname"]').type('John')
-//     cy.get('input[name="email"]').first().type('invalid@email') // Memilih elemen pertama
-//     cy.get('input[name="phone"]').type('086789000111')
-//     cy.get('input[name="institution"]').type('jaya abadi')
-//     cy.get('select[name="subject"]').select('Ads')  // Ubah klik menjadi select
-//     cy.get('textarea[name="message"]').type('johndooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo')
-
-//     // Kirimkan formulir
-//     cy.get('button[type="submit"]').click()
-
-//     // Memastikan popup muncul dengan pesan error yang sesuai
-//     cy.get('.popup-message').should('be.visible').and('contain', 'Please enter a valid email address')
-//   })
-// })
-
